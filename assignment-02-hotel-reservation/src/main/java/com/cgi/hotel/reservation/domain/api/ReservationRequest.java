@@ -1,4 +1,4 @@
-package com.klm.ivop.bff.domain.api;
+package com.cgi.hotel.reservation.domain.api;
 
 import com.cgi.hotel.reservation.domain.model.PaymentMode;
 import com.cgi.hotel.reservation.domain.model.RoomSegment;

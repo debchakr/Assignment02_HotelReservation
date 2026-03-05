@@ -7,9 +7,9 @@ import org.springframework.stereotype.Service;
 import com.cgi.hotel.reservation.repository.ReservationRepository;
 import com.cgi.hotel.reservation.client.CreditCardClient;
 import com.cgi.hotel.reservation.domain.model.ReservationStatus;
-import com.klm.ivop.bff.domain.api.ReservationRequest;
-import com.klm.ivop.bff.domain.api.ReservationResponse;
-import com.klm.ivop.bff.domain.entity.Reservation;
+import com.cgi.hotel.reservation.domain.api.ReservationRequest;
+import com.cgi.hotel.reservation.domain.api.ReservationResponse;
+import com.cgi.hotel.reservation.domain.entity.Reservation;
 import lombok.AllArgsConstructor;
 
 import java.time.temporal.ChronoUnit;

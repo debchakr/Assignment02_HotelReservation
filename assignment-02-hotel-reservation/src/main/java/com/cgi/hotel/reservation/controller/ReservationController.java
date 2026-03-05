@@ -13,10 +13,10 @@ import org.springframework.http.ResponseEntity;
 import lombok.AllArgsConstructor;
 
 import com.cgi.hotel.reservation.service.ReservationService;
-//import com.yourpackage.DomainToApiMapper;
-//import com.yourpackage.ApiToDomainMapper;
-import com.klm.ivop.bff.domain.api.ReservationRequest;
-import com.klm.ivop.bff.domain.api.ReservationResponse;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import com.cgi.hotel.reservation.domain.api.ReservationRequest;
+import com.cgi.hotel.reservation.domain.api.ReservationResponse;
 
 @RestController
 @RequestMapping(path = "/reservations")
@@ -24,10 +24,13 @@ import com.klm.ivop.bff.domain.api.ReservationResponse;
 public class ReservationController {
 
     private final ReservationService reservationService;
+    private static final Logger logger = LoggerFactory.getLogger(ReservationController.class);
 
     @PostMapping("/confirm")
     public ResponseEntity<ReservationResponse> confirm(
         @RequestBody ReservationRequest request) {
+
+        logger.info("Received reservation request for hotel");
 
         return ResponseEntity.ok(
             reservationService.confirmReservation(request)

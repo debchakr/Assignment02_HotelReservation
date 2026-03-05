@@ -1,4 +1,4 @@
-package com.klm.ivop.bff.domain.entity;
+package com.cgi.hotel.reservation.domain.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

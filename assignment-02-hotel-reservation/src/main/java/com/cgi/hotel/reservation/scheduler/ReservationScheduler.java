@@ -9,7 +9,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 import java.time.LocalDate;
 import java.util.List;
 
-import com.klm.ivop.bff.domain.entity.Reservation;
+import com.cgi.hotel.reservation.domain.entity.Reservation;
 import com.cgi.hotel.reservation.repository.ReservationRepository;
 import com.cgi.hotel.reservation.domain.model.ReservationStatus;
 import com.cgi.hotel.reservation.domain.model.PaymentMode;
