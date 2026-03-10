@@ -58,10 +58,7 @@ public class CreditCardClient {
                         })
 
                     .bodyToMono(PaymentStatusResponse.class)
-
-                    // ⏳ Timeout Protection
                     .timeout(Duration.ofSeconds(5))
-
                     .block();
 
             if (response == null) {

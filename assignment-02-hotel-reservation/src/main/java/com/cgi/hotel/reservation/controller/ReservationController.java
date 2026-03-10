@@ -1,9 +1,5 @@
 package com.cgi.hotel.reservation.controller;
 
-import java.util.List;
-import java.util.stream.Collectors;
-
-
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.PostMapping;

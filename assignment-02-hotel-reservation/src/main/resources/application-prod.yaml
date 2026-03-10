@@ -1,0 +1,17 @@
+spring:
+  redis:
+    host: localhost
+    port: 6379
+
+logging:
+  level:
+    com.cgi: INFO
+    root: INFO
+
+credit-card:
+  base-url: http://localhost:9090/host/credit-card-payment-api
+
+springdoc:
+  api-docs:
+    enabled: true
+

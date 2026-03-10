@@ -1,5 +1,6 @@
 package com.cgi.hotel.reservation.config;
 
+import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
@@ -9,6 +10,7 @@ import org.springframework.data.redis.listener.adapter.MessageListenerAdapter;
 
 import com.cgi.hotel.reservation.listener.BankTransferSubscriber;
 
+@ConditionalOnBean(RedisConnectionFactory.class)
 @Configuration
 public class RedisConfig {
 

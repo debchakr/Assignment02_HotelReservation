@@ -24,7 +24,6 @@ public class ReservationService {
     private final CreditCardClient creditCardClient;
 
 
-
     public ReservationResponse confirmReservation(ReservationRequest request) {
 
         validateReservation(request);
@@ -64,7 +63,7 @@ public class ReservationService {
         }
     }
 
-    private Reservation map(ReservationRequest request) {
+    protected Reservation map(ReservationRequest request) {
 
         return Reservation.builder()
             .customerName(request.getCustomerName())

@@ -1,5 +1,5 @@
 <configuration>
-    <springProperty scope="context" name="loglevelKlm" source="logging.level.com.klm"/>
+    <springProperty scope="context" name="loglevelCgi" source="logging.level.com.cgi"/>
     <springProperty scope="context" name="loglevelRoot" source="logging.level.root"/>
 
     <appender name="CONSOLE_LOCAL" class="ch.qos.logback.core.ConsoleAppender">
@@ -8,7 +8,7 @@
         </encoder>
     </appender>
 
-    <logger name="com.klm" level="${loglevelKlm}"/>
+    <logger name="com.cgi" level="${loglevelCgi}"/>
 
     <root level="${loglevelRoot}" additivity="false">
         <appender-ref ref="CONSOLE_LOCAL" />
