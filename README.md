@@ -97,6 +97,23 @@ mvn clean install
 4) Run the application
 mvn spring-boot:run
 
+# Track and save open api spec
+	1) Start the Application
+       cd C:\Workspace\Assignment02_HotelReservation\assignment-02-hotel-reservation
+      mvn spring-boot:run
+       Wait for “ReservationApplication started successfully” in the logs.
+	2) Generate the OpenAPI Spec
+         In a second terminal, fetch the spec and write it to src/main/resources/openapi.json:
+             cd C:\Workspace\Assignment02_HotelReservation\assignment-02-hotel-reservation
+                   Invoke-WebRequest -Uri http://localhost:8080/v3/api-docs `
+                   -OutFile src\main\resources\openapi.json
+	3) Verify the file contents if needed:
+              Get-Content src\main\resources\openapi.json | Select-String "openapi"
+	4) Stop the Application
+	5) Go back to the terminal running mvn spring-boot:run and press Ctrl+C.
+	6) Commit the Spec
+
+
 # Configuration
 
 Application configuration is located in:
@@ -107,3 +124,4 @@ It contains settings for:
 - Redis connection
 - External service endpoints
 - Logging configuration
+<img width="1370" height="4656" alt="image" src="https://github.com/user-attachments/assets/534ce042-8350-4158-a1aa-22847eef78a2" />
