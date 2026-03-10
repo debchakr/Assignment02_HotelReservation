@@ -124,4 +124,3 @@ It contains settings for:
 - Redis connection
 - External service endpoints
 - Logging configuration
-<img width="1370" height="4656" alt="image" src="https://github.com/user-attachments/assets/534ce042-8350-4158-a1aa-22847eef78a2" />
